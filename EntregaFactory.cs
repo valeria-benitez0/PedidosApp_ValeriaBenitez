@@ -12,6 +12,9 @@ namespace PedidosApp
         {
             if (peso > 10)
                 return new EntregaCamion();
+
+            if (tipoProducto == "Accesorio" && peso < 2 && !urgente)
+                return new EntregaBicicleta();
             if (tipoProducto == "Tecnología" && urgente)
                 return new EntregaDron();
             if (tipoProducto == "Accesorio")
