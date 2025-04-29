@@ -46,7 +46,6 @@
             // 
             // cmbFiltroTipoEntrega
             // 
-            this.cmbFiltroTipoEntrega.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cmbFiltroTipoEntrega.FormattingEnabled = true;
             this.cmbFiltroTipoEntrega.Location = new System.Drawing.Point(137, 104);
             this.cmbFiltroTipoEntrega.Name = "cmbFiltroTipoEntrega";
@@ -55,14 +54,13 @@
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnFiltrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnFiltrar.Location = new System.Drawing.Point(137, 149);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
             this.btnFiltrar.TabIndex = 2;
-            this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = false;
+            this.btnFiltrar.Text = "button1";
+            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // FrmHistorial
             // 

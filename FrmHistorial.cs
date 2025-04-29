@@ -26,10 +26,10 @@ namespace PedidosApp
             cmbFiltroTipoEntrega.Items.Add("Bicicleta");
             cmbFiltroTipoEntrega.SelectedIndex = 0;
 
-            CargarPedidos();
+            CargarPedidos("Todos");
         }
 
-        private void CargarPedidos(string filtro = "Todos")
+        private void CargarPedidos(string filtro)
         {
             dgvPedidos.Rows.Clear();
             dgvPedidos.Columns.Clear();
@@ -46,7 +46,9 @@ namespace PedidosApp
 
             foreach (var p in pedidos)
             {
-                if (filtro == "Todos" || p.MetodoEntrega.TipoEntrega() == filtro)
+                string tipoEntrega = p.MetodoEntrega.TipoEntrega();
+
+                if (filtro == "Todos" || tipoEntrega.Equals(filtro, StringComparison.OrdinalIgnoreCase))
                 {
                     dgvPedidos.Rows.Add(
                         p.Cliente,
@@ -54,18 +56,18 @@ namespace PedidosApp
                         p.Urgente ? "Sí" : "No",
                         p.Peso,
                         p.Distancia,
-                        p.MetodoEntrega.TipoEntrega(),
+                        tipoEntrega,
                         p.ObtenerCosto().ToString("0.00")
                     );
                 }
             }
         }
-
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            string filtro = cmbFiltroTipoEntrega.SelectedItem.ToString();
-            CargarPedidos(filtro);
-        }
+            string filtroSeleccionado = cmbFiltroTipoEntrega.SelectedItem?.ToString() ?? "Todos";
+            CargarPedidos(filtroSeleccionado);
 
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+        }
     }
 }
