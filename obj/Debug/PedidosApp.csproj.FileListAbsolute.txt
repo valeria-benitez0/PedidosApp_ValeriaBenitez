@@ -8,3 +8,4 @@ C:\Users\Valeria\OneDrive\Documentos\Herramientas de programación II\PedidosApp
 C:\Users\Valeria\OneDrive\Documentos\Herramientas de programación II\PedidosApp\PedidosApp\obj\Debug\PedidosApp.csproj.CoreCompileInputs.cache
 C:\Users\Valeria\OneDrive\Documentos\Herramientas de programación II\PedidosApp\PedidosApp\obj\Debug\PedidosApp.exe
 C:\Users\Valeria\OneDrive\Documentos\Herramientas de programación II\PedidosApp\PedidosApp\obj\Debug\PedidosApp.pdb
+C:\Users\Valeria\OneDrive\Documentos\Herramientas de programación II\PedidosApp\PedidosApp\obj\Debug\PedidosApp.FrmHistorial.resources
