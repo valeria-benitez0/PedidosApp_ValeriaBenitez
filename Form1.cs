@@ -65,5 +65,11 @@ namespace PedidosApp
         {
 
         }
+
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            FrmHistorial historial = new FrmHistorial();
+            historial.ShowDialog();
+        }
     }
 }
