@@ -27,3 +27,23 @@ por kilómetro.
 3. Indica si es un pedido urgente.
 4. Ingresa el peso del producto y la distancia en kilómetros.
 5. Al presionar "Calcular", se muestra el tipo de entrega y el costo.
+
+# Nuevas funcionalidades agregadas (Continuación)
+
+- Nueva estrategia de entrega ecológica en bicicleta (3 * km).
+- Formulario de historial de pedidos con DataGridView.
+- Filtro por tipo de entrega mediante ComboBox.
+
+  ## Capturas de la Parte 2
+#Formulario
+![Pedido Realizado](Capturas/FormularioVacio.png)
+
+# Pedido realizado
+![Pedido Realizado](Capturas/FormularioConDatos.png)
+
+# Historial de pedidos
+![Historial Todos](Capturas/Historial.png)
+
+# Historial filtrado
+![Historial Bicicleta](Capturas/Filtrar.png)
+
