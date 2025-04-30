@@ -42,11 +42,25 @@ namespace PedidosApp
                     return;
                 }
 
+                double peso = Convert.ToDouble(nudPeso.Value);
+                int distancia = Convert.ToInt32(nudDistancia.Value);
+
+                // Validación: Peso y distancia no pueden ser 0
+                if (peso <= 0)
+                {
+                    MessageBox.Show("El peso del producto debe ser mayor que 0 kg.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (distancia <= 0)
+                {
+                    MessageBox.Show("La distancia debe ser mayor que 0 km.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 string cliente = txtCliente.Text.Trim();
                 string producto = cmbProducto.SelectedItem.ToString();
                 bool urgente = chkUrgente.Checked;
-                double peso = Convert.ToDouble(nudPeso.Value);
-                int distancia = Convert.ToInt32(nudDistancia.Value);
 
                 Pedido pedido = new Pedido(cliente, producto, urgente, peso, distancia);
                 RegistroPedidos.Instancia.AgregarPedido(pedido);
@@ -70,6 +84,11 @@ namespace PedidosApp
         {
             FrmHistorial historial = new FrmHistorial();
             historial.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

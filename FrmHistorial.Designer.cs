@@ -39,27 +39,30 @@
             this.dgvPedidos.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgvPedidos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedidos.Location = new System.Drawing.Point(137, 190);
+            this.dgvPedidos.Location = new System.Drawing.Point(25, 141);
             this.dgvPedidos.Name = "dgvPedidos";
-            this.dgvPedidos.Size = new System.Drawing.Size(473, 150);
+            this.dgvPedidos.Size = new System.Drawing.Size(743, 297);
             this.dgvPedidos.TabIndex = 0;
             // 
             // cmbFiltroTipoEntrega
             // 
             this.cmbFiltroTipoEntrega.FormattingEnabled = true;
-            this.cmbFiltroTipoEntrega.Location = new System.Drawing.Point(137, 104);
+            this.cmbFiltroTipoEntrega.Location = new System.Drawing.Point(25, 36);
             this.cmbFiltroTipoEntrega.Name = "cmbFiltroTipoEntrega";
-            this.cmbFiltroTipoEntrega.Size = new System.Drawing.Size(164, 21);
+            this.cmbFiltroTipoEntrega.Size = new System.Drawing.Size(180, 21);
             this.cmbFiltroTipoEntrega.TabIndex = 1;
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(137, 149);
+            this.btnFiltrar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnFiltrar.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFiltrar.Location = new System.Drawing.Point(25, 88);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltrar.Size = new System.Drawing.Size(83, 29);
             this.btnFiltrar.TabIndex = 2;
-            this.btnFiltrar.Text = "button1";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Text = "Filtrar";
+            this.btnFiltrar.UseVisualStyleBackColor = false;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // FrmHistorial
